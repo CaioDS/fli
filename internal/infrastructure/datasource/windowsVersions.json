@@ -1,0 +1,292 @@
+[
+
+  { "version": "3.38.1", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.38.1-stable.zip" },
+
+  { "version": "3.38.0", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.38.0-stable.zip" },
+
+  { "version": "3.35.7", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.35.7-stable.zip" },
+
+  { "version": "3.35.6", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.35.6-stable.zip" },
+
+  { "version": "3.35.5", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.35.5-stable.zip" },
+
+  { "version": "3.35.4", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.35.4-stable.zip" },
+
+  { "version": "3.35.3", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.35.3-stable.zip" },
+
+  { "version": "3.35.2", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.35.2-stable.zip" },
+
+  { "version": "3.35.1", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.35.1-stable.zip" },
+
+  { "version": "3.32.8", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.32.8-stable.zip" },
+
+  { "version": "3.32.7", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.32.7-stable.zip" },
+
+  { "version": "3.32.6", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.32.6-stable.zip" },
+
+  { "version": "3.32.5", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.32.5-stable.zip" },
+
+  { "version": "3.32.4", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.32.4-stable.zip" },
+
+  { "version": "3.32.3", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.32.3-stable.zip" },
+
+  { "version": "3.32.2", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.32.2-stable.zip" },
+
+  { "version": "3.32.1", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.32.1-stable.zip" },
+
+  { "version": "3.32.0", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.32.0-stable.zip" },
+
+  { "version": "3.29.3", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.29.3-stable.zip" },
+
+  { "version": "3.29.2", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.29.2-stable.zip" },
+
+  { "version": "3.29.1", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.29.1-stable.zip" },
+
+  { "version": "3.29.0", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.29.0-stable.zip" },
+
+  { "version": "3.27.4", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.27.4-stable.zip" },
+
+  { "version": "3.27.3", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.27.3-stable.zip" },
+
+  { "version": "3.27.2", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.27.2-stable.zip" },
+
+  { "version": "3.27.1", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.27.1-stable.zip" },
+
+  { "version": "3.27.0", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.27.0-stable.zip" },
+
+  { "version": "3.24.5", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.24.5-stable.zip" },
+
+  { "version": "3.24.4", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.24.4-stable.zip" },
+
+  { "version": "3.24.3", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.24.3-stable.zip" },
+
+  { "version": "3.24.2", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.24.2-stable.zip" },
+
+  { "version": "3.24.1", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.24.1-stable.zip" },
+
+  { "version": "3.24.0", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.24.0-stable.zip" },
+
+  { "version": "3.22.3", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.22.3-stable.zip" },
+
+  { "version": "3.22.2", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.22.2-stable.zip" },
+
+  { "version": "3.22.1", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.22.1-stable.zip" },
+
+  { "version": "3.22.0", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.22.0-stable.zip" },
+
+  { "version": "3.19.6", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.19.6-stable.zip" },
+
+  { "version": "3.19.5", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.19.5-stable.zip" },
+
+  { "version": "3.19.4", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.19.4-stable.zip" },
+
+  { "version": "3.19.3", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.19.3-stable.zip" },
+
+  { "version": "3.19.2", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.19.2-stable.zip" },
+
+  { "version": "3.19.1", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.19.1-stable.zip" },
+
+  { "version": "3.19.0", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.19.0-stable.zip" },
+
+  { "version": "3.16.9", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.16.9-stable.zip" },
+
+  { "version": "3.16.8", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.16.8-stable.zip" },
+
+  { "version": "3.16.7", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.16.7-stable.zip" },
+
+  { "version": "3.16.6", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.16.6-stable.zip" },
+
+  { "version": "3.16.5", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.16.5-stable.zip" },
+
+  { "version": "3.16.4", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.16.4-stable.zip" },
+
+  { "version": "3.16.3", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.16.3-stable.zip" },
+
+  { "version": "3.16.2", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.16.2-stable.zip" },
+
+  { "version": "3.16.1", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.16.1-stable.zip" },
+
+  { "version": "3.16.0", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.16.0-stable.zip" },
+
+  { "version": "3.13.9", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.13.9-stable.zip" },
+
+  { "version": "3.13.8", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.13.8-stable.zip" },
+
+  { "version": "3.13.7", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.13.7-stable.zip" },
+
+  { "version": "3.13.6", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.13.6-stable.zip" },
+
+  { "version": "3.13.5", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.13.5-stable.zip" },
+
+  { "version": "3.13.4", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.13.4-stable.zip" },
+
+  { "version": "3.13.3", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.13.3-stable.zip" },
+
+  { "version": "3.13.2", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.13.2-stable.zip" },
+
+  { "version": "3.13.1", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.13.1-stable.zip" },
+
+  { "version": "3.13.0", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.13.0-stable.zip" },
+
+  { "version": "3.10.6", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.10.6-stable.zip" },
+
+  { "version": "3.10.5", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.10.5-stable.zip" },
+
+  { "version": "3.10.4", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.10.4-stable.zip" },
+
+  { "version": "3.10.3", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.10.3-stable.zip" },
+
+  { "version": "3.10.2", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.10.2-stable.zip" },
+
+  { "version": "3.10.1", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.10.1-stable.zip" },
+
+  { "version": "3.10.0", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.10.0-stable.zip" },
+
+  { "version": "3.7.12", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.7.12-stable.zip" },
+
+  { "version": "3.7.11", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.7.11-stable.zip" },
+
+  { "version": "3.7.10", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.7.10-stable.zip" },
+
+  { "version": "3.7.9", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.7.9-stable.zip" },
+
+  { "version": "3.7.8", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.7.8-stable.zip" },
+
+  { "version": "3.7.7", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.7.7-stable.zip" },
+
+  { "version": "3.7.6", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.7.6-stable.zip" },
+
+  { "version": "3.7.5", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.7.5-stable.zip" },
+
+  { "version": "3.7.4", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.7.4-stable.zip" },
+
+  { "version": "3.7.3", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.7.3-stable.zip" },
+
+  { "version": "3.7.2", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.7.2-stable.zip" },
+
+  { "version": "3.7.1", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.7.1-stable.zip" },
+
+  { "version": "3.7.0", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.7.0-stable.zip" },
+
+  { "version": "3.3.10", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.3.10-stable.zip" },
+
+  { "version": "3.3.9", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.3.9-stable.zip" },
+
+  { "version": "3.3.8", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.3.8-stable.zip" },
+
+  { "version": "3.3.7", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.3.7-stable.zip" },
+
+  { "version": "3.3.6", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.3.6-stable.zip" },
+
+  { "version": "3.3.5", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.3.5-stable.zip" },
+
+  { "version": "3.3.4", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.3.4-stable.zip" },
+
+  { "version": "3.3.3", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.3.3-stable.zip" },
+
+  { "version": "3.3.2", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.3.2-stable.zip" },
+
+  { "version": "3.3.1", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.3.1-stable.zip" },
+
+  { "version": "3.3.0", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.3.0-stable.zip" },
+
+  { "version": "3.0.5", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.0.5-stable.zip" },
+
+  { "version": "3.0.4", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.0.4-stable.zip" },
+
+  { "version": "3.0.3", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.0.3-stable.zip" },
+
+  { "version": "3.0.2", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.0.2-stable.zip" },
+
+  { "version": "3.0.1", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.0.1-stable.zip" },
+
+  { "version": "3.0.0", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_3.0.0-stable.zip" },
+
+  { "version": "2.10.5", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_2.10.5-stable.zip" },
+
+  { "version": "2.10.4", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_2.10.4-stable.zip" },
+
+  { "version": "2.10.3", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_2.10.3-stable.zip" },
+
+  { "version": "2.10.2", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_2.10.2-stable.zip" },
+
+  { "version": "2.10.1", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_2.10.1-stable.zip" },
+
+  { "version": "2.10.0", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_2.10.0-stable.zip" },
+
+  { "version": "2.8.1", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_2.8.1-stable.zip" },
+
+  { "version": "2.8.0", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_2.8.0-stable.zip" },
+
+  { "version": "2.5.3", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_2.5.3-stable.zip" },
+
+  { "version": "2.5.2", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_2.5.2-stable.zip" },
+
+  { "version": "2.5.1", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_2.5.1-stable.zip" },
+
+  { "version": "2.5.0", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_2.5.0-stable.zip" },
+
+  { "version": "2.2.3", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_2.2.3-stable.zip" },
+
+  { "version": "2.2.2", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_2.2.2-stable.zip" },
+
+  { "version": "2.2.1", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_2.2.1-stable.zip" },
+
+  { "version": "2.2.0", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_2.2.0-stable.zip" },
+
+  { "version": "2.0.6", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_2.0.6-stable.zip" },
+
+  { "version": "2.0.5", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_2.0.5-stable.zip" },
+
+  { "version": "2.0.4", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_2.0.4-stable.zip" },
+
+  { "version": "2.0.3", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_2.0.3-stable.zip" },
+
+  { "version": "2.0.2", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_2.0.2-stable.zip" },
+
+  { "version": "2.0.1", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_2.0.1-stable.zip" },
+
+  { "version": "2.0.0", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_2.0.0-stable.zip" },
+
+  { "version": "1.22.6", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_1.22.6-stable.zip" },
+
+  { "version": "1.22.5", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_1.22.5-stable.zip" },
+
+  { "version": "1.22.4", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_1.22.4-stable.zip" },
+
+  { "version": "1.22.3", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_1.22.3-stable.zip" },
+
+  { "version": "1.22.2", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_1.22.2-stable.zip" },
+
+  { "version": "1.22.1", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_1.22.1-stable.zip" },
+
+  { "version": "1.22.0", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_1.22.0-stable.zip" },
+
+  { "version": "1.20.4", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_1.20.4-stable.zip" },
+
+  { "version": "1.20.3", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_1.20.3-stable.zip" },
+
+  { "version": "1.20.2", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_1.20.2-stable.zip" },
+
+  { "version": "1.20.1", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_1.20.1-stable.zip" },
+
+  { "version": "1.20.0", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_1.20.0-stable.zip" },
+
+  { "version": "1.17.5", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_1.17.5-stable.zip" },
+
+  { "version": "1.17.4", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_1.17.4-stable.zip" },
+
+  { "version": "1.17.3", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_1.17.3-stable.zip" },
+
+  { "version": "1.17.2", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_1.17.2-stable.zip" },
+
+  { "version": "1.17.1", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_1.17.1-stable.zip" },
+
+  { "version": "1.17.0", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_1.17.0-stable.zip" },
+
+  { "version": "v1.12.13+hotfix.9", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_v1.12.13+hotfix.9-stable.zip" },
+
+  { "version": "v1.12.13+hotfix.8", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_v1.12.13+hotfix.8-stable.zip" },
+
+  { "version": "v1.12.13+hotfix.7", "link": "https://storage.googleapis.com/flutter_infra_release/releases/stable/windows/flutter_windows_v1.12.13+hotfix.7-stable.zip" }
+]
