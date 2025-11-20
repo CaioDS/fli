@@ -2,7 +2,6 @@ package services
 
 import (
 	"errors"
-	"fmt"
 	"os"
 	"path/filepath"
 
@@ -19,46 +18,31 @@ func CreateSystemFileService(osContext *context.OSContext) *SystemFileService {
 	}
 }
 
-func (s *SystemFileService) CreateDefaultSDKLocation() (string, error) {
-	var system = s.osContext.GetOSSystem()
+func (s *SystemFileService) GetDefaultPath(osContext context.OSContext) (string, error) {
+	system := osContext.GetOSSystem()
 	switch system {
 	case "windows":
-		return s.CreateDefaultSDKLocationWindows()
+		return "C:/src", nil
+
 	case "darwin":
-		return s.CreateDefaultSDKLocationDarwinOrLinux()
 	case "linux":
-		return s.CreateDefaultSDKLocationDarwinOrLinux()
-	default:
-		panic("Unsupported system")
-	}
-}
-
-func (s *SystemFileService) CreateDefaultSDKLocationWindows() (string, error) {
-	var base = os.Getenv("LOCALAPPDATA")
-	if(base == "") {
 		var userProfile = os.Getenv("USERPROFILE")
-		if(userProfile == "") {
-			return "", errors.New("USERPROFILE environment variable is not set")
-		}
-		base = filepath.Join(userProfile, "AppData", "Local")
+		var dir = filepath.Join(userProfile, "development")
+		return dir, nil
+
+	default: 
+		return "", errors.New("unsupported system")
 	}
-	return filepath.Join(base, "development/test"), nil
+	return "", nil
 }
 
-func (s *SystemFileService) CreateDefaultSDKLocationDarwinOrLinux() (string, error) {
-	homeDirectory, err := os.UserHomeDir()
-	if err != nil {
-		fmt.Printf("Failed to get home directory: %s\n", err)
-		return "", errors.New("failed to get home directory")
-	}
-
-	developmentDirectory := filepath.Join(homeDirectory, "development")+"/test"
+func (s *SystemFileService) CreateCustomPath(path string) (string, error) {
 	var permissionCode = os.FileMode(0755)
-	err = os.MkdirAll(developmentDirectory, permissionCode)
-	if err != nil {
-		fmt.Printf("Failed to create development directory: %s\n", err)
-		return "", errors.New("failed to create development directory: "+developmentDirectory)
-	}
 
-	return developmentDirectory, nil
+	err := os.MkdirAll(path, permissionCode)
+	if err != nil {
+		return "", errors.New("failed to create custom directory: "+path)
+	}
+	
+	return path, nil
 }

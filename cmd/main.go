@@ -5,7 +5,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/CaioDS/fli/internal/application/usecases"
+	"github.com/CaioDS/fli/internal/application/commands"
 	"github.com/CaioDS/fli/internal/infrastructure/context"
 	"github.com/CaioDS/fli/internal/infrastructure/services"
 )
@@ -13,6 +13,7 @@ import (
 func main() {
 	var osContext = context.CreateOSContext()
 	var fileService = services.CreateSystemFileService(osContext)
+	var versionsService = services.CreateVersionsService(*osContext)
 
 	var rootCommand = &cobra.Command{}
 	var version string
@@ -27,7 +28,7 @@ func main() {
 			}
 
 			fmt.Println("\nInstalling flutter...")
-			usecases.CreateDefaultSDKLocation(*fileService)
+			commands.HandleInstallCommand(*fileService, *osContext)
 		},
 	}
 

@@ -2,7 +2,6 @@ package context
 
 import (
 	"runtime"
-	"fmt"
 )
 
 type OSContext struct {}
@@ -12,6 +11,5 @@ func CreateOSContext() *OSContext {
 }
 
 func (o *OSContext) GetOSSystem() string {
-	fmt.Println("System: %s", runtime.GOOS)
 	return runtime.GOOS;
 }
