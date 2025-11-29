@@ -7,8 +7,17 @@ import (
 )
 
 
-func HandleInstallCommand(service services.SystemFileService, context context.OSContext) {
-	_ = usecases.CreateDefaultSDKLocation(service, context)
-	
+func HandleInstallCommand(
+	systemFileService services.SystemFileService, 
+	versionService services.VersionsService,
+	context context.OSContext,
+	version string,
+) {
+	defaultPath := usecases.CreateDefaultSDKLocation(systemFileService, context)
+
+	parsedDefaultPath := defaultPath+"/"+version
+
+	// usecases.DownloadFlutterSDK(versionService, context, version, parsedDefaultPath)	
+	usecases.CreatePathEnvVariable(context, parsedDefaultPath)
 	
 }

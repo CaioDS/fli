@@ -11,10 +11,14 @@ import (
 )
 
 func main() {
+	// CONTEXTs
 	var osContext = context.CreateOSContext()
-	var fileService = services.CreateSystemFileService(osContext)
-	var versionsService = services.CreateVersionsService(*osContext)
+	var localDBContext = context.CreateLocalDBContext("fli.db")
 
+	// SERVICES 
+	var fileService = services.CreateSystemFileService(osContext, localDBContext)
+	var versionsService = services.CreateVersionsService(osContext, localDBContext)
+	
 	var rootCommand = &cobra.Command{}
 	var version string
 
@@ -28,7 +32,10 @@ func main() {
 			}
 
 			fmt.Println("\nInstalling flutter...")
-			commands.HandleInstallCommand(*fileService, *osContext)
+			commands.HandleInstallCommand(*fileService, *versionsService, *osContext, version)
+
+			fmt.Println("\nFlutter SDK v", version, " installed with success!")
+			fmt.Println("\nUse 'flutter doctor' on terminal to check the status")
 		},
 	}
 
