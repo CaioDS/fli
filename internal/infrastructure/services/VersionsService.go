@@ -1,19 +1,20 @@
 package services
 
 import (
-	"encoding/json"
 	"errors"
 	"log"
-	"os"
-	"slices"
 
+	"github.com/CaioDS/fli/internal/domain/models"
 	"github.com/CaioDS/fli/internal/infrastructure/context"
+	"github.com/CaioDS/fli/internal/infrastructure/repositories"
 	"github.com/hashicorp/go-getter"
 )
 
 type VersionsService struct {
-	Versions []Version
-	dbContext *context.LocalDbContext
+	system string
+	arch string
+	localRepository *repositories.LocalRepository
+	versionsRepository *repositories.VersionsRepository
 }
 
 type Version struct {
@@ -21,80 +22,65 @@ type Version struct {
 	Link string
 }
 
-func CreateVersionsService(
-	osContext *context.OSContext, 
-	dbContext *context.LocalDbContext,
+func NewVersionsService(
+	osContext context.OSContext, 
+	localRepository *repositories.LocalRepository,
+	versionsRepository *repositories.VersionsRepository,
 ) *VersionsService {
 	system := osContext.GetOSSystem()
-	
-	var versions []byte
-	var err error
-	
-	switch system {
-	case "windows":
-		versions, err = os.ReadFile("internal\\infrastructure\\datasource\\windowsVersions.json")
-	case "darwin":
-		versions, err = os.ReadFile("internal\\infrastructure\\datasource\\macOsVersions.json")
-	case "linux":
-		versions, err = os.ReadFile("internal\\infrastructure\\datasource\\linuxVersions.json")
-	}
-
-	if err != nil {
-		panic("failed to read system flutter versions")
-	}
-	
-	var data []Version;
-	err = json.Unmarshal(versions, &data)
-		if err != nil {
-		panic("failed to parse system flutter versions")
-	}
+	arch := osContext.GetArchSystem()
 
 	return &VersionsService{
-		Versions: data,
-		dbContext: dbContext,
+		system: system,
+		arch: arch,
+		localRepository: localRepository,
+		versionsRepository: versionsRepository,
 	}
 }
 
 func (v *VersionsService) DownloadVersion(version string, destiny string) error {
-	var index int = slices.IndexFunc(v.Versions, func(item Version) bool {
-		return item.Version == version
-	})
-	if index == -1 {
-		return errors.New("version not found")
+	data, err := v.versionsRepository.GetVersion(version)
+	if err != nil {
+		return err
 	}
 
-	element := v.Versions[index]
+	var link string = v.getLinkByOS(*data)
 
-	log.Println("Downloading version from this source: "+element.Link)
+	log.Println("Downloading version ", version)
 
 	client := &getter.Client{
-		Src: element.Link,
+		Src: link,
 		Dst: destiny,
 		Mode: getter.ClientModeDir,
 	}
 
-	err := client.Get()
+	err = client.Get()
 	if err != nil {
 		return errors.New("failed to download flutter sdk")
 	}
 
-	err = v.saveVersionResgistry(version, destiny)
+	err = v.localRepository.SaveVersionRegistry(version, destiny)
 
-	log.Println("Download was finished!")
+	log.Println("Download finished!")
 	log.Println("Saved in: "+destiny)
 	return err
 }
 
-func (v *VersionsService) saveVersionResgistry(version string, path string) error {
-	err := v.dbContext.CreateBucket("versions")
-	if err != nil {
-		return errors.New("Failed to create versions bucket")
+func (v *VersionsService) getLinkByOS(version models.Version) string {
+	switch v.system {
+	case "darwin":
+		if v.arch == "arm64" {
+			return version.Darwin_arm64
+		} else {
+			return version.Darwin_intel
+		}
+	case "linux":
+		if v.arch == "arm64" {
+			return version.Linux_arm64
+		} else {
+			return version.Linux_x64
+		}
+	default:
+		return version.Windows
 	}
-
-	err = v.dbContext.Put("versions", []byte(version), []byte(path))
-	if err != nil {
-		return errors.New("failed to save version occurency on database!")
-	}
-
-	return nil
 }

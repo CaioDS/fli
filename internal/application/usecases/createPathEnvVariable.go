@@ -29,8 +29,8 @@ func CreatePathEnvVariable(context context.OSContext, pathVariable string) error
 	}
 
 	// AVOID duplicated variables
-	paths := strings.Split(currentPath, ";")
-	for _, p := range paths {
+	paths := strings.SplitSeq(currentPath, ";")
+	for p := range paths {
 		if strings.EqualFold(p, absolutePathVariable) {
 			return nil
 		}

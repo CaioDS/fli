@@ -11,7 +11,7 @@ type LocalDbContext struct {
 	DB *bolt.DB
 }
 
-func CreateLocalDBContext(source string) *LocalDbContext {
+func NewLocalDBContext(source string) *LocalDbContext {
 	db, err := bolt.Open(source, 0666, &bolt.Options{
 		Timeout: 1 * time.Second,
 	})

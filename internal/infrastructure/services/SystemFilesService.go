@@ -6,25 +6,26 @@ import (
 	"path/filepath"
 
 	"github.com/CaioDS/fli/internal/infrastructure/context"
+	"github.com/CaioDS/fli/internal/infrastructure/repositories"
 )
 
 type SystemFileService struct {
-	osContext *context.OSContext
-	dbContext *context.LocalDbContext
+	osContext context.OSContext
+	localRepository *repositories.LocalRepository
 }
 
-func CreateSystemFileService(
-	osContext *context.OSContext, 
-	dbContext *context.LocalDbContext,
+func NewSystemFileService(
+	osContext context.OSContext, 
+	localRepository *repositories.LocalRepository,
 ) *SystemFileService {
 	return &SystemFileService{
 		osContext: osContext,
-		dbContext: dbContext,
+		localRepository: localRepository,
 	}
 }
 
 func (s *SystemFileService) GetDefaultPath(osContext context.OSContext) (string, error) {
-	path, err := s.retrieveStoredDefaultPath()
+	path, err := s.localRepository.GetStoredDefaultPath()
 	if err == nil {
 		return path, nil
 	}
@@ -54,29 +55,7 @@ func (s *SystemFileService) CreateCustomPath(path string) (string, error) {
 		return "", errors.New("failed to create custom directory: "+path)
 	}
 
-	err = s.saveDefaultPath(path)
+	err = s.localRepository.SaveDefaultPath(path)
 	return path, err
 }
 
-func (s *SystemFileService) retrieveStoredDefaultPath() (string, error) {
-	path, err := s.dbContext.Get("config", []byte("defaultPath"))
-	if err != nil {
-		return "", err
-	}
-
-	return string(path), nil
-}
-
-func (s *SystemFileService) saveDefaultPath(path string) error {
-	err := s.dbContext.CreateBucket("config")
-	if err != nil {
-		return errors.New("Failed to create config bucket")
-	}
-
-	err = s.dbContext.Put("config", []byte("defaultPath"), []byte(path))
-	if err != nil {
-		return errors.New("failed to save default path on database!")
-	}
-
-	return nil
-}
