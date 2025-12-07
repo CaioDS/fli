@@ -6,18 +6,30 @@ import (
 	"github.com/spf13/cobra"
 
 	"github.com/CaioDS/fli/internal/application/commands"
+	"github.com/CaioDS/fli/internal/infrastructure/config"
 	"github.com/CaioDS/fli/internal/infrastructure/context"
+	"github.com/CaioDS/fli/internal/infrastructure/repositories"
 	"github.com/CaioDS/fli/internal/infrastructure/services"
 )
 
 func main() {
+	var env = config.Get()
+
 	// CONTEXTs
-	var osContext = context.CreateOSContext()
-	var localDBContext = context.CreateLocalDBContext("fli.db")
+	var osContext = context.NewOSContext()
+	var localDBContext = context.NewLocalDBContext("fli.db")
+	dbContext, err := context.NewDbContext(env.DynamoEndpoint, env.DynamoRegion)
+ 	if err != nil {
+		panic("Failed to stablish a connection with the database")
+	}
+
+	// REPOSITORIES
+	var localRepository = repositories.NewLocalRepository(localDBContext)
+	var versionsRepository = repositories.NewVersionsRepository(dbContext)
 
 	// SERVICES 
-	var fileService = services.CreateSystemFileService(osContext, localDBContext)
-	var versionsService = services.CreateVersionsService(osContext, localDBContext)
+	var fileService = services.NewSystemFileService(*osContext, localRepository)
+	var versionsService = services.NewVersionsService(*osContext, localRepository, versionsRepository)
 	
 	var rootCommand = &cobra.Command{}
 	var version string

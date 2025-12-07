@@ -17,7 +17,6 @@ func HandleInstallCommand(
 
 	parsedDefaultPath := defaultPath+"/"+version
 
-	// usecases.DownloadFlutterSDK(versionService, context, version, parsedDefaultPath)	
+	usecases.DownloadFlutterSDK(versionService, context, version, parsedDefaultPath)	
 	usecases.CreatePathEnvVariable(context, parsedDefaultPath)
-	
 }
