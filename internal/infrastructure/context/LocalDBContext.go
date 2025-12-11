@@ -3,6 +3,7 @@ package context
 import (
 	"time"
 
+	"github.com/CaioDS/fli/internal/domain/dto"
 	bolt "go.etcd.io/bbolt"
 	boltErrors "go.etcd.io/bbolt/errors"
 )
@@ -76,4 +77,26 @@ func (d *LocalDbContext) Delete(bucket string, key []byte) error {
 		
 		return b.Delete(key)
 	})
+}
+
+// List all items given a bucket
+func (d *LocalDbContext) List(bucket string) ([]dto.ListDto, error) {
+	var items []dto.ListDto
+
+	d.DB.View(func(tx *bolt.Tx) error {
+		b := tx.Bucket([]byte(bucket))
+
+		return b.ForEach(func(k []byte, v []byte) error {
+			if v != nil {
+				value := make([]byte, len(v))
+				items = append(items, dto.ListDto{
+					Key: k,
+					Value: value,
+				})
+			}
+			return nil
+		})
+	})
+
+	return items, nil
 }

@@ -3,6 +3,7 @@ package repositories
 import (
 	"errors"
 
+	"github.com/CaioDS/fli/internal/domain/dto"
 	"github.com/CaioDS/fli/internal/infrastructure/context"
 )
 
@@ -51,4 +52,13 @@ func (r *LocalRepository) SaveDefaultPath(path string) error {
 	}
 
 	return nil
+}
+
+func (r *LocalRepository) ListInstalledVersions() ([]dto.ListDto, error) {
+	result, err := r.localDbContext.List("versions")
+	if err != nil {
+		return nil, errors.New("Failed to list available versions")
+	}
+
+	return result, nil
 }

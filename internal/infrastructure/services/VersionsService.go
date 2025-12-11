@@ -4,6 +4,7 @@ import (
 	"errors"
 	"log"
 
+	"github.com/CaioDS/fli/internal/domain/dto"
 	"github.com/CaioDS/fli/internal/domain/models"
 	"github.com/CaioDS/fli/internal/infrastructure/context"
 	"github.com/CaioDS/fli/internal/infrastructure/repositories"
@@ -64,6 +65,10 @@ func (v *VersionsService) DownloadVersion(version string, destiny string) error 
 	log.Println("Download finished!")
 	log.Println("Saved in: "+destiny)
 	return err
+}
+
+func (v *VersionsService) GetInstalledVersions() ([]dto.ListDto, error) {
+	return v.localRepository.ListInstalledVersions()
 }
 
 func (v *VersionsService) getLinkByOS(version models.Version) string {

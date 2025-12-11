@@ -34,7 +34,7 @@ func main() {
 	var rootCommand = &cobra.Command{}
 	var version string
 
-	var cmd = &cobra.Command{
+	var installCmd = &cobra.Command{
 		Use: "install",
 		Short: "Install flutter framework.",
 		Run: func (cmd *cobra.Command, args []string) {
@@ -51,8 +51,18 @@ func main() {
 		},
 	}
 
-	cmd.Flags().StringVarP(&version, "version", "v", "", "Version to be installed")
+	installCmd.Flags().StringVarP(&version, "version", "v", "", "Version to be installed")
 
-	rootCommand.AddCommand(cmd)
+	var listVersionCmd = &cobra.Command{
+		Use: "list",
+		Short: "List installed versions",
+		Run: func (cmd *cobra.Command, args []string) {
+			commands.HandleListVersionsCommand(*versionsService)
+			return
+		},
+	}
+
+	rootCommand.AddCommand(installCmd)
+	rootCommand.AddCommand(listVersionCmd)
 	rootCommand.Execute()
 }
